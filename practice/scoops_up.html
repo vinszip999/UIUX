@@ -7,17 +7,17 @@
 		var scoops = 10;
 		while (scoops >= 0) {
 			if (scoops == 3) {
-				alert("아이스크림이 얼마 남지 않았어요!")
+				alert("아이스크림이 얼마 남지 않았어요! (" + scoops + "scoops)")
 			} else if (scoops > 9) {
-				alert("아이스크림이 녹고 있으니 빨리 드세요!")
+				alert("아이스크림이 녹고 있으니 빨리 드세요! (" + scoops + "scoops)")
 			} else if (scoops == 2) {
-				alert("두 입 남았어요!")
+				alert("두 입 남았어요! (" + scoops + "scoops)")
 			} else if (scoops == 1) {
-				alert("한 입 남았어요!")
+				alert("한 입 남았어요! (" + scoops + "scoops)")
 			} else if (scoops == 0) {
-				alert("바닥났어요!")
+				alert("바닥났어요! (" + scoops + "scoops)")
 			} else {
-				alert("아직 아이스크림이 많이 남아 있어요, 와서 드세요")
+				alert("아직 아이스크림이 많이 남아 있어요, 와서 드세요 (" + scoops + "scoops)")
 			}
 			scoops = scoops - 1;
 		}
