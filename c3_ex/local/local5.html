@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<body>
+    
+    <h1>The Stprage Method 응용</h1>
+
+    <h3>createItems</h3>
+    <button onclick="createItems()">createItems</button>
+
+    <h3>displayItems</h3>
+    <button onclick="displayItems()">displayItems</button>
+
+    <h3>deleteItems</h3>
+    <button onclick="deleteItems()">deleteItems</button>
+
+    <hr>
+    <div id="demo"></div>
+
+    <script>
+        function createItems() {
+            localStorage.setItem("mytime", Date.now());
+            localStorage.setItem("myname", "Yoon");
+            localStorage.setItem("myage", 20);
+        }
+
+        function displayItems() {
+            var l, i;
+            document.getElementById("demo").innerHTML = "";
+            for (i = 0; i < localStorage.length; i++) {
+                x = localStorage.key(i);
+                y = localStorage.getItem(x);
+
+                document.getElementById("demo").innerHTML += (x + ' : ' + y) + "<br>";
+            }
+        }
+
+        function deleteItems() {
+            localStorage.clear();
+        }
+    </script>
+
+</body>
+
+</html>
