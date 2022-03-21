@@ -9,7 +9,8 @@ function init() {
 	button.onclick = handleButtonClick1;
 
 	// 추가1
-
+	var button = document.getElementById("deleteButton");
+	button.onclick = handleButtonClick2;
 
 	loadPlaylist();
 }
@@ -20,9 +21,9 @@ function handleButtonClick(e) {
 	//alert("Adding " + songName);
 
 
-	if(songName==""){
+	if (songName == "") {
 		alert("곡을 입력하세요");
-	}else{
+	} else {
 		var li = document.createElement("li");
 		li.innerHTML = songName;
 		var ul = document.getElementById("playlist");
@@ -32,8 +33,17 @@ function handleButtonClick(e) {
 }
 
 
-function handleButtonClick1(e){
+function handleButtonClick1(e) {
 	removeAll();
 }
 
-	//추가2
+//추가2
+function handleButtonClick2(e) {
+	var textInput = document.getElementById("songTextInput");
+	var songName = textInput.value;
+	if (songName == "") {
+		alert("곡을 입력하세요");
+	} else {
+		remove(songName);
+	}
+}

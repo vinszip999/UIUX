@@ -31,7 +31,7 @@ function getStoreArray(key) {
 		playlistArray = new Array();
 	}
 	else {
-		playlistArray = JSON.parse(playlistArray);
+		playlistArray = JSON.parse(playlistArray); /*저장할 때는 문자열, 가져올 때는 객채*/
 	}
 	return playlistArray;
 }
