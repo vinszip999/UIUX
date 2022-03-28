@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object test</title>
+</head>
+
+<body>
+    <script>
+        var fido = {
+            name: "Fido",
+            weight: 40,
+            breed: "Mixed",
+            loves: ["walks", "fetching balls", "ball-biting"]
+        };
+        var prop;
+        for (prop in fido) {
+            alert("Fido has a " + prop + " property ")
+
+            if (prop == "name") {
+                alert("This is " + fido[prop]);
+            }
+        }
+    </script>
+</body>
+
+</html>

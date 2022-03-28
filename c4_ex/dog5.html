@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object test</title>
+</head>
+
+<body>
+    <script>
+        var fido = {
+            name: "Fido",
+            weight: 40,
+            breed: "Mixed",
+            loves: ["walks", "fetching balls", "ball-biting"]
+        };
+        var prop;
+        for (prop in fido) {
+            alert("Fido has a " + prop + " property ")
+
+            if (prop == "name") {
+                alert("This is " + fido[prop]);
+            }
+        }
+
+        var likes = fido.loves;
+        var likesString = "Fido likes";
+
+        for (var i = 0; i < likes.length; i++) {
+            likesString += " " + likes[i];
+        }
+        alert(likesString);
+
+        // 6번
+        function bark(dog) {
+            if (dog.weight > 25) {
+                alert("WOOF");
+            } else {
+                alert("yip"); // next 생성자
+            }
+        }
+    </script>
+</body>
+
+</html>
