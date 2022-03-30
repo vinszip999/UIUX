@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test5</title>
+</head>
+
+<body>
+    <script>
+        var Person = {};
+
+        Person['age'] = 20;
+        Person['name'] = 'STAYC';
+
+        // Person.add = function (a, b) {
+        Person['add'] = function (a, b) { // 이 표현 방법도 가능하다!
+            return a + b;
+        };
+        
+        console.log('더하기 : %d', Person.add(10, 10));
+    </script>
+</body>
+
+</html>
