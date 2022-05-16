@@ -2,10 +2,11 @@
 
 var watchId = null;
 var map = null;
+
 var ourCoords = {
-	latitude: 47.624851,
-	longitude: -122.52099
-};
+	latitude: 37.555946,
+	longitude: 126.972317
+}
 
 window.onload = getMyLocation;
 
@@ -31,7 +32,7 @@ function displayLocation(position) {
 
 	var km = computeDistance(position.coords, ourCoords);
 	var distance = document.getElementById("distance");
-	distance.innerHTML = "당신은 WickedlySmart HQ와 " + km + "km 떨어져 있습니다";
+	distance.innerHTML = "당신은 서울역과 " + km + "km 떨어져 있습니다";
 
 	if (map == null) {
 		showMap(position.coords);
