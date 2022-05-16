@@ -1,0 +1,28 @@
+/*
+ * myLoc.css
+ *
+*/
+
+body {
+	margin: 10px;
+}
+
+font {
+	@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+	font-family: 'Nanum Pen Script', serif;
+	font-size: 25px;
+	color: blue;
+}
+
+form,
+div#location,
+div#distance {
+	padding: 5px;
+}
+
+div#map {
+	margin: 5px;
+	width: auto;
+	height: 400px;
+	border: 1px solid rgb(139, 139, 139);
+}
