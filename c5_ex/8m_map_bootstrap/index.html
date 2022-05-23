@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>3312이유빈 - Map Tracker</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- *이 부분을 넣어야 모바일일 때 글자가 크게 나옴* -->
+
+    <!-- 중요한 4줄 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/logoboot.png" />
+    <link rel="icon" type="image/png" href="imgs/logoboot.png" sizes="192x192" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+    <!-- boot cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- api -->
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCIwcnmj5PcfmncGWA-OUCdLiZVQ1tDhZ4"></script>
+
+    <script src="myLoc.js"></script>
+    <link rel="stylesheet" href="myLoc.css">
+
+</head>
+
+<body>
+
+    <!-- bootstrap button -->
+    <div class="container-fluid">
+        <button type="button" class="btn btn-lg btn-warning btn-block" style="margin-bottom:5px">get my location</button>
+
+        <center>
+            <button type="button" class="btn btn-info" id="watch">Watch me</button>
+            <button type="button" class="btn btn-success" id="clearWatch">Clear watch</button>
+        </center>
+
+        <div id="map">
+        </div>
+
+        <div id="location">
+            여러분의 위치가 여기에 나타날 것입니다.
+        </div>
+
+        <div id="distance">
+            서울역과의 거리가 여기에 나타날 것입니다.
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
