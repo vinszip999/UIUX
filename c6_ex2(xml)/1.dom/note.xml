@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes>
+<note>
+	<to>Tove</to>
+	<from>Jani</from>
+	<heading>Reminder</heading>
+	<body>Don't forget me this weekend!</body>
+	<br></br>
+</note>
+<note>
+	<to>vins</to>
+	<from>fender</from>
+	<heading>look</heading>
+	<body>let's go city</body>
+</note>
+<note>
+	<to>tandy</to>
+	<from>tadi</from>
+	<heading>present</heading>
+	<body>I like this present</body>
+</note>
+</notes>
