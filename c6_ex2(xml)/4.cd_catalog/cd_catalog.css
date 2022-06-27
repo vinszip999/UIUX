@@ -1,0 +1,36 @@
+CATALOG {
+    background-color: #eeee00;
+    width: 100%;
+}
+
+CD {
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 0;
+}
+
+TITLE {
+    color: #FF0000;
+    font-size: 20pt;
+}
+
+ARTIST {
+    color: #a200ff;
+    font-size: 20pt;
+    margin-left: 15pt;
+}
+
+COUNTRY,
+PRICE,
+YEAR,
+COMPANY {
+    display: block;
+    color: #000000;
+    margin-left: 20pt;
+}
+
+ARTIST {
+    color: #ff00c8;
+    font-size: 20pt;
+    margin-left: 15pt;
+}
